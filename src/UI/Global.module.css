@@ -1,0 +1,65 @@
+
+.area{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border:1px solid aliceblue;
+    margin:10px;
+    
+
+}
+.snake{
+    width:4%;
+    height: 4%;
+    position: absolute;
+    background-color: rgba(14, 243, 91, 0.877);
+    z-index: 2;
+    border: 1px solid black;
+    
+
+}
+.snakeFood{
+    width: 4%;
+    height: 4%;
+    position: absolute;
+    background-color: rgb(172, 9, 9);
+    border-radius: 50px;
+    border: 1px solid black;
+    top:0;
+    left:0; 
+    z-index: 1;
+    animation: example 2s infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes example {
+    from{
+      box-shadow:0 0 0 2px rgba(172, 9, 9, 0.651) ;
+    }
+    to{
+        box-shadow: 0 0 0 5px rgba(172, 9, 9, 0.37),
+        0 0 0 8px rgba(172, 9, 9, 0.22),
+        0 0 0 10px rgba(172, 9, 9, 0.11),
+        0 0 0 10px rgba(172, 9, 9, 0.103),
+        0 0 0 15px rgba(172, 9, 9, 0.096) ;
+    }
+}
+ .countplus{
+     width: 400px;
+     height: 30px;
+     background:linear-gradient(
+        to right, 
+        hsl(98 100% 62%), 
+        hsl(204 100% 59%)
+      );
+      color:white;
+     display: flex;
+     justify-content: center;
+     font-size: 25px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: 60px;
+     align-items: center;
+     box-shadow: 1px -2px 24px 5px rgba(50, 236, 26, 0.75);
+-webkit-box-shadow: 1px -2px 24px 5px rgba(50, 236, 26, 0.75);
+-moz-box-shadow: 1px -2px 24px 5px rgba(50, 236, 26, 0.75);
+ }
